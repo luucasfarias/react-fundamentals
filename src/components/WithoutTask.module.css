@@ -1,0 +1,22 @@
+.withoutTask {
+  width: 46rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.containerImg {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.containerTextInfo {
+  display: flex;
+  flex-direction: column;
+  line-height: 140%;
+  color: var(--gray-300);
+}

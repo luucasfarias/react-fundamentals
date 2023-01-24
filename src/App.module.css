@@ -1,0 +1,187 @@
+.containerTask {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: calc(0px - 1.2rem - 8px);
+  gap: 8px;
+}
+
+.inputTask {
+  width: 39.8rem;
+  height: 3.37rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--gray-300);
+  padding: 1rem;
+}
+
+.btnCreateTask {
+  width: 5.6rem;
+  height: 3.25rem;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.containerListTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.collumnName {
+  width: 46rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.collumnName>div>span {
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.tasksCreated {
+  color: var(--blue);
+}
+
+.completeTasks {
+  color: var(--purple);
+}
+
+.badge {
+  width: 25px;
+  height: 19px;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  text-align: center;
+  padding: 2px 8px;
+  margin-top: -3px;
+  color: var(--gray-100);
+}
+
+.badgeFinish {
+  width: 3.25rem;
+  height: 1.18rem;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  text-align: center;
+  padding: 2px 8px;
+  margin-top: -3px;
+  color: var(--gray-100);
+}
+
+.containerCardListTask {
+  /* background-color: red; */
+  height: 451px;
+  width: 736px;
+  left: 352px;
+  top: 291px;
+  border-radius: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  row-gap: 0.75rem;
+
+  position: absolute;
+  width: 736px;
+  height: 451px;
+  left: calc(50% - 736px/2);
+  top: 291px;
+}
+
+.cardTasks {
+  width: 736px;
+  height: 72px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  background-color: var(--gray-400);
+  color: var(--gray-100);
+}
+
+.taskName {
+  display: flex;
+  align-content: center;
+  gap: 12px;
+  /* line-height: 140%; */
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid var(--blue);
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  background-clip: content-box;
+}
+
+input[type="checkbox"]:checked {
+  border: transparent;
+  color: #fff;
+  box-shadow: inset 1em 1em var(--purple);
+  background-color: var(--purple);
+} */
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  vertical-align: middle;
+  background-clip: content-box;
+  padding: 3px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--purple);
+}
+
+input[type="checkbox"]:checked+label {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.cardTasks>button {
+  background: transparent;
+  border: transparent;
+  color: var(--gray-300);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.finishTask {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
